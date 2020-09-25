@@ -1,0 +1,20 @@
+{
+  "/portal-api": {
+    "target": "http://localhost:8081/",
+    "secure": false,
+    "pathRewrite": {
+      "^/portal-api": ""
+    },
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/ahm-api": {
+    "target": "http://localhost:9090/announcement-help-management-rs",
+    "secure": false,
+    "pathRewrite": {
+      "^/ahm-api": ""
+    },
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

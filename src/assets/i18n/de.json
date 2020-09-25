@@ -1,0 +1,11 @@
+{
+  "LANDING": {
+    "CONTACT": "Kontakt",
+    "LINKS": "Themen-Links",
+    "LOADING": "Laden...",
+    "RSS_ERROR": "Newsfeed nicht verfügbar oder nicht konfiguriert",
+    "PORTAL_DATA_ERROR": "Fehler beim Abrufen von Portaldaten",
+    "ADMIN_PANEL": "Admin-Panel",
+    "ADMIN_PANEL_INFO": "Wählen Sie das Portal aus, um zu sehen, wie seine Welcomeseite aussieht."
+  }
+}

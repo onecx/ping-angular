@@ -1,0 +1,62 @@
+.page {
+  display: inline-flex;
+}
+
+.galleria {
+  padding: 2em 0em 0em 2em;
+}
+
+:host {
+  ::ng-deep {
+    .ui-panel-images {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+:host ::ng-deep .ui-listbox {
+  width: auto;
+}
+
+:host ::ng-deep .ui-listbox-list-wrapper {
+  border: 1px solid #bdbdbd;
+  .ui-listbox-list {
+    border: none;
+  }
+}
+
+.yammer {
+  padding: 2em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .yammer-no-data {
+    text-align: center;
+  } 
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 630px){
+  .page {
+    justify-content: center;
+    display: unset;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  :host ::ng-deep .ui-galleria {
+    width: -webkit-fill-available, fill-available !important;
+    width: -moz-available !important;
+    width: fill-available !important;
+  }
+  .yammer-no-data {
+    text-align: unset;
+  }
+  .yammer {
+    padding-left: 0em;
+  }
+  .page {
+    display: unset;
+  }
+}

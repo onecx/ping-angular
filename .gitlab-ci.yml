@@ -1,4 +1,4 @@
 include:
   - project: '1000kit/infra/config/gitlab-ci-angular-template'
-    ref: 'v1-release'
+    ref: 'v1-harbor'
     file: '.gitlab-ci-angular.yml'

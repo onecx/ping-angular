@@ -7,7 +7,7 @@ import { Observable, from } from 'rxjs';
 })
 export class YammerService {
   readonly rssUrl = 'https://www.wykop.pl/rss/';
-  readonly CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'; //for testing only remove it when rss feed done
+  readonly CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'; // for testing only remove it when rss feed done
 
   constructor() {}
 
@@ -16,12 +16,12 @@ export class YammerService {
   }
 
   private getMessagesFromRssFeed(url: string): Observable<YammerMessage[]> {
-    let Parser = require('../../../node_modules/rss-parser/dist/rss-parser.js');
-    let parser = new Parser();
+    const Parser = require('../../../node_modules/rss-parser/dist/rss-parser.js');
+    const parser = new Parser();
 
     return from(
       (async () => {
-        let feed = await parser.parseURL(this.CORS_PROXY + url);
+        const feed = await parser.parseURL(this.CORS_PROXY + url);
         const messages: YammerMessage[] = [];
 
         feed.items.forEach(item => {

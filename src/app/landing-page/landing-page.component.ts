@@ -28,7 +28,7 @@ export class LandingPageComponent implements OnInit {
   displayDialog = false;
   availablePortals: PortalDTO[];
   selectedPortal: PortalDTO | Portal;
-  readonly permission: String = 'BASE_PORTAL#SHOW';
+  readonly permission: string = 'BASE_PORTAL#SHOW';
 
   constructor(
     private yammerService: YammerService,

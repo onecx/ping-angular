@@ -16,7 +16,7 @@ const mockPortals: PortalDTO[] = [
   },
 ];
 const copyObject = (object: unknown) => {
-  if (object == null || object != typeof Object) {
+  if (object == null || object !== typeof Object) {
     return object;
   }
 

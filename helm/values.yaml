@@ -1,6 +1,6 @@
 app:
   image:
-    repository: "1000kit/${project.name}"
+    repository: "1000kit/ping-angular"
     tag: ${project.version}
   routing:
     enabled: true

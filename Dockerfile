@@ -1,19 +1,9 @@
-FROM node:12.2.0 as build
-COPY package*json package-lock.json .npmrc ./
+FROM harbor.1000kit.org/1000kit/spa-base:v1
 
-## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
-RUN npm ci && mkdir /ng-app && mv ./node_modules ./ng-app
+# Copy applicaiton build
+COPY nginx/locations.conf $DIR_LOCATION/locations.conf
+# Copy applicaiton build
+COPY dist/ping-angular $DIR_HTML
 
-WORKDIR /ng-app
-COPY . .
-# you need to use `--` to pass params to npm scripts
-RUN npm run ng build -- --prod --output-path=dist/ 
-## Actual dist 
-FROM registry.gitlab.com/1000kit/infra/docker-images/spa-base-image:master
-
-COPY nginx/default.conf /opt/bitnami/nginx/conf/app.conf
-
-COPY --from=build --chown=101:0 /ng-app/dist /opt/bitnami/nginx/html
-USER 0
-RUN chmod -R g=u /opt/bitnami/nginx/html/
+RUN chmod 775 -R $DIR_HTML/assets
 USER 1001

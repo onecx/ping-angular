@@ -1,4 +1,4 @@
 include:
-  - project: '1000kit/infra/config/gitlab-ci-angular-template'
-    ref: 'v2'
-    file: '.gitlab-ci-angular.yml'
+  - project: '1000kit/infra/ci/angular'
+    ref: 'v1'
+    file: 'ci.yml'

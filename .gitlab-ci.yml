@@ -2,7 +2,3 @@ include:
   - project: '1000kit/infra/ci/angular'
     ref: 'v1'
     file: 'ci.yml'
-
-docker:build:
-  before_script:
-    - ls -all

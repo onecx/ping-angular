@@ -19,6 +19,7 @@ jobs:
     needs: docker
     secrets: inherit
     with:
+      packageDir: '.'
       samoHelmSourceDir: helm
       samoHelmSourceCopy: 'true'
 

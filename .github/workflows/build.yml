@@ -9,11 +9,16 @@ jobs:
     uses: onecx/ci-npm/.github/workflows/angular.yml@main
     secrets: inherit
   docker:
-    uses: onecx/ci-npm/.github/workflows/docker.yml@main
+    uses: onecx/ci-common/.github/workflows/docker.yml@main
     needs: angular
     secrets: inherit
+    with:
+      samoDockerFile: Dockerfile
   helm:
-    uses: onecx/ci-npm/.github/workflows/helm.yml@main
+    uses: onecx/ci-common/.github/workflows/helm.yml@main
     needs: docker
     secrets: inherit
+    with:
+      samoHelmSourceDir: helm
+      samoHelmSourceCopy: 'true'
 

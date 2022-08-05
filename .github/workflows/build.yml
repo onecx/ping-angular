@@ -5,7 +5,7 @@ on:
     branches:
       - main
 jobs:
-  quarkus:
+  angular:
     uses: onecx/ci-npm/.github/workflows/angular.yml@main
     secrets: inherit
   docker:

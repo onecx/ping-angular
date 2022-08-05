@@ -10,7 +10,7 @@ jobs:
     secrets: inherit
   docker:
     uses: onecx/ci-npm/.github/workflows/docker.yml@main
-    needs: quarkus
+    needs: angular
     secrets: inherit
   helm:
     uses: onecx/ci-npm/.github/workflows/helm.yml@main

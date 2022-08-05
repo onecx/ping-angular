@@ -1,0 +1,18 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  quarkus:
+    uses: onecx/ci-npm/.github/workflows/angular.yml@main
+    secrets: inherit
+  docker:
+    uses: onecx/ci-npm/.github/workflows/docker.yml@main
+    needs: quarkus
+    secrets: inherit
+  helm:
+    uses: onecx/ci-npm/.github/workflows/helm.yml@main
+    needs: docker
+    secrets: inherit

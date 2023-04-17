@@ -1,6 +1,0 @@
-dependencies:
-- name: helm-angular-app
-  repository: oci://ghcr.io/onecx/charts
-  version: 0.1.0
-digest: sha256:fefb426c7be51408488ce32f6b84cd256646847e4f6fa23842e66ce5a6a6733c
-generated: "2023-04-17T17:56:46.615231108+02:00"

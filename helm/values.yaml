@@ -1,7 +1,7 @@
 app:
   image:
-    repository: "1000kit/ping-angular"
-    tag: ${project.version}
+    repository: "onecx/ping-angular"
+    tag: main
   routing:
     enabled: true
 

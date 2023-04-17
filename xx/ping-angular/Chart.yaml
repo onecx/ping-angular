@@ -1,0 +1,22 @@
+annotations:
+  samo.project.created: "2023-04-17T17:56:45+02:00"
+  samo.project.revision: ff5b892b0b8f5d0ebf7c60f743b18f10f17c57a7
+  samo.project.version: 1.4.0-rc.21
+apiVersion: v2
+appVersion: 1.4.0-rc.21
+dependencies:
+- alias: app
+  name: helm-angular-app
+  repository: oci://ghcr.io/onecx/charts
+  version: ^0
+description: Onecx ping angular application
+keywords:
+- angular
+- onecx
+maintainers:
+- email: tkit_dev@1000kit.org
+  name: Tkit Developer
+name: ping-angular
+sources:
+- https://github.com/onecx/ping-angular
+version: 1.4.0-rc.21

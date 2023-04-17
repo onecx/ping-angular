@@ -1,0 +1,12 @@
+PERMISSION NAME;PERMISSION_KEY;portal-user
+Show base portal;BASE_PORTAL#SHOW;x
+Show admin dialog;ADMIN_DIALOG#SHOW;x
+View my profile;PROFILE#VIEW;x
+Edit my avatar;PROFILE_AVATAR#EDIT;x
+Edit my address;PROFILE_ADDRESS#EDIT;x
+Edit my phone;PROFILE_PHONE#EDIT;x
+Edit my account settings;ACCOUNT_SETTINGS#EDIT;x
+View my Language and Timezone Settings;ACCOUNT_SETTINGS#LANGUAGE_TIMEZONE;x
+View my Layout and Theme Settings;ACCOUNT_SETTINGS#LAYOUT_THEME;x
+View my Privacy Settings;ACCOUNT_SETTINGS#PRIVACY;x
+View my Preferences Settings;ACCOUNT_SETTINGS#PREFERENCES;x

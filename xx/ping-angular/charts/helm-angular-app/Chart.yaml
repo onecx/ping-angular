@@ -1,0 +1,15 @@
+annotations:
+  samo.project.created: "2023-04-12T09:42:50Z"
+  samo.project.revision: 71425e85d6f3a6c8e5271ce1cde4883153e7787c
+  samo.project.version: 0.1.0-rc.1
+apiVersion: v2
+appVersion: 0.1.0
+description: Angular helm chart
+keywords:
+- app
+- angular
+maintainers:
+- email: tkit-dev@1000kit.org
+  name: Tkit Developer
+name: helm-angular-app
+version: 0.1.0

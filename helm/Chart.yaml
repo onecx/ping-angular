@@ -1,18 +1,18 @@
 apiVersion: v2
-name: ${project.name}
-version: ${project.version}
-appVersion: ${project.version}
-description: ${project.name}
+name: ping-angular
+version: 0.0.0
+appVersion: 0.0.0
+description: Onecx ping angular application
 keywords:
-  - ${project.name}
+  - angular
+  - onecx
 sources:
-  - https://gitlab.com/1000kit/apps/tkit-portal/${project.name}
+  - https://github.com/onecx/ping-angular
 maintainers:
   - name: Tkit Developer
     email: tkit_dev@1000kit.org
 dependencies:
-  # https://gitlab.com/1000kit/infra/helm/angular.git
-  - name: angular
-    version: ^0
-    repository: alias:1000kit
+  - name: helm-angular-app
     alias: app
+    version: ^0
+    repository: oci://ghcr.io/onecx/charts    

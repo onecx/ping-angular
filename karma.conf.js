@@ -21,9 +21,6 @@ module.exports = function (config) {
       dir: require("path").join(__dirname, "./coverage"),
       subdir: ".",
       reporters: [{ type: "lcov" }],
-      instrumenterOptions: {
-        skipFilesWithNoCoverage: true,
-      },
     },
     reporters: ["progress", "kjhtml", "sonarqube"],
     browsers: ["Chrome"],

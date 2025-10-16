@@ -7,13 +7,13 @@ updates:
     labels:
       - dependencies
   - package-ecosystem: "docker"
-    directory: "/src/main/docker"
+    directory: "/"
     schedule:
       interval: daily
     labels:
       - docker-image
   - package-ecosystem: "helm"
-    directory: "/src/main/helm"
+    directory: "/helm"
     schedule:
       interval: daily
     labels:

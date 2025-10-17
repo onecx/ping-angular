@@ -14,5 +14,5 @@ maintainers:
 dependencies:
   - name: helm-angular-app
     alias: app
-    version: ^0
+    version: 0.21.0
     repository: oci://ghcr.io/onecx/charts    
